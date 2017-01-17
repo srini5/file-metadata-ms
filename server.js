@@ -27,6 +27,7 @@ app.post('/upload/', function(req,res){
     res.writeHead(200);   
     console.log("returning: " + JSON.stringify(resp));
     res.write(JSON.stringify(resp));
+    resp = []; // now that response is returned empty it.
     res.end();
   });
   
