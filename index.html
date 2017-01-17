@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title> File metadata microservice</title>
+    </head>
+    
+    <body>
+        <h1>Welcome to my 'File metadata MS' page</h1>
+                    
+        <p>This is a microservice which returns the size and other metadata information corresponding to the uploaded files.</p>
+        
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="myFiles" multiple/>
+            <input type="submit" value="Submit"/>
+        </form>
+        
+        </p>
+        
+    
+    
+        <!--script src="https://code.jquery.com/jquery-3.1.1.min.js"></script-->
+
+        <script>
+            
+            // $(document).ready(function(){
+            //   var formData;
+            //   $('#myFiles').on('change', function(){
+            
+            //   var files = $(this).get(0).files;
+            
+            //   if (files.length > 0){
+            //     // One or more files selected, process the file upload
+            
+            //     // create a FormData object which will be sent as the data payload in the
+            //     // AJAX request
+            //     formData = new FormData();
+            
+            //     // loop through all the selected files
+            //     for (var i = 0; i < files.length; i++) {
+            //       var file = files[i];
+            
+            //       // add the files to formData object for the data payload
+            //       formData.append('uploads', file, file.name);
+            //         }
+            
+            //     }
+            
+            //     $.ajax({
+            //         url: '/upload',
+            //         type: 'POST',
+            //         data: formData,
+            //         processData: false,
+            //         contentType: false,
+            //         success: function(data){
+            //             console.log('upload successful!');
+            //         }
+            //     });
+            // });
+                  
+            // });
+            
+            
+
+                 
+        </script>
+    </body>
+    
+</html>
