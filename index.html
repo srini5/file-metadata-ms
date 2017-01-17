@@ -8,12 +8,28 @@
                     
         <p>This is a microservice which returns the size and other metadata information corresponding to the uploaded files.</p>
         
+        <h3> Choose files: </h3>
         <form method="POST" action="/upload" enctype="multipart/form-data">
             <input type="file" name="myFiles" multiple/>
             <input type="submit" value="Submit"/>
         </form>
         
         </p>
+        
+        <h5>
+            <ul>
+                <li>
+                    You can select one or multiple files to retrieve the metadata for.
+                </li>
+                <li>
+                    In case of files of a large size, or if there are a lot of files, then the response might take longer.
+                </li>
+                <li>
+                    Sample response: <br>
+                    [{"name":"Pomodoro_clock.PNG","size":26746,"type":"image/png"},{"name":"Tic_Tac_Toe.PNG","size":41358,"type":"image/png"}]
+                </li>
+            </ul>
+        </h5>
         
     
     
